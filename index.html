@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>jaewondeveloper</title>
   
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="jaewondeveloper" />
+  <meta property="og:description" content="흔한 중학생 개발자" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/jaewondeveloper/jaewondeveloper.github.io/main/banner.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="jaewondeveloper" />
+  <meta name="twitter:description" content="흔한 중학생 개발자" />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/jaewondeveloper/jaewondeveloper.github.io/main/banner.png" />
+
   <script src="https://cdn.jsdelivr.net/gh/jaewondeveloper/minecraftbutton/mc-button.js" defer></script>
   
   <style>
@@ -52,7 +64,6 @@
       padding: 80px 20px 40px 20px;
     }
 
-    /* 가독성 확보를 위한 백드롭 어두운 오버레이 레이어 */
     .hero-overlay {
       position: absolute;
       inset: 0;
@@ -86,6 +97,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      cursor: pointer;
     }
 
     .nav-title {
@@ -127,7 +139,6 @@
       gap: 16px;
     }
 
-    /* ── 타이틀 로고 디자인 ── */
     .logo-box {
       margin-bottom: 10px;
     }
@@ -157,7 +168,6 @@
         0 0 20px rgba(28, 184, 83, 0.4);
     }
 
-    /* ── 설명 및 경고 문구 ── */
     .description {
       font-size: 16px;
       color: #ceced4;
@@ -179,7 +189,6 @@
       margin-top: 4px;
     }
 
-    /* ── 버튼 가로 정렬 그룹 ── */
     .btn-group {
       display: flex;
       gap: 16px;
@@ -189,13 +198,11 @@
       flex-wrap: wrap;
     }
 
-    /* mc-button 커스텀 컴포넌트 폰트 매칭 */
     mc-button {
       font-family: 'NeoDonggeunmo', sans-serif !important;
       font-size: 14px;
     }
 
-    /* ── 하단 소셜 미디어 그룹 ── */
     .social-group {
       display: flex;
       gap: 10px;
@@ -215,7 +222,6 @@
       fill: currentColor;
     }
 
-    /* ── 하단 스크롤 화살표 ── */
     .scroll-arrow {
       position: absolute;
       bottom: 24px;
@@ -241,7 +247,7 @@
 <body>
 
   <nav class="top-nav">
-    <div class="nav-left">
+    <div class="nav-left" onclick="location.href='index.html'">
       <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated">
         <rect width="16" height="16" fill="#1cb853"/>
         <rect x="3" y="3" width="3" height="3" fill="#111116"/>
@@ -267,7 +273,6 @@
     <div class="hero-overlay"></div>
 
     <main class="main-content">
-      
       <div class="logo-box">
         <h1 class="logo-main">jaewondev</h1>
         <span class="logo-sub">frontend developer</span>
@@ -280,13 +285,13 @@
       </div>
 
       <div class="btn-group">
-        <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="220px" height="56px" onclick="location.href='project'">
+        <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="220px" height="56px" onclick="location.href='project.html'">
           프로젝트
         </mc-button>
-        <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="220px" height="56px" onclick="location.href='about'">
+        <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="220px" height="56px" onclick="location.href='about.html'">
           소개
         </mc-button>
-        <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="220px" height="56px" onclick="location.href='blog'">
+        <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="220px" height="56px" onclick="location.href='blog.html'">
           블로그
         </mc-button>
       </div>
@@ -301,13 +306,11 @@
           </div>
         </mc-button>
       </div>
-
     </main>
 
     <div class="scroll-arrow" aria-label="스크롤 다운">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
     </div>
-
   </div>
 
 </body>
