@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - jaewondeveloper</title>
+  <script src="https://cdn.jsdelivr.net/gh/jaewondeveloper/minecraftbutton/mc-button.js" defer></script>
+  
+  <style>
+    @font-face {
+        font-family: 'NeoDonggeunmo';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+        font-weight: normal;
+        font-display: swap;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --font-pixel: 'NeoDonggeunmo', monospace; --bg-topbar: rgba(20, 20, 24, 0.9); }
+    html, body { height: 100%; background: #0b0b0d; font-family: var(--font-pixel); color: #ffffff; overflow-x: hidden; }
+
+    .hero-container {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background-image: url('https://preview.redd.it/minecraft-wallpapers-v0-p3prxq134dtf1.png?width=1080&crop=smart&auto=webp&s=5d9f7d63e940b22b48abaa3eab1bfd53052cf2cd');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px 60px 20px;
+    }
+
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(11, 11, 13, 0.95) 100%); z-index: 1; }
+    .top-nav { position: fixed; top: 0; left: 0; right: 0; height: 54px; background: var(--bg-topbar); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255, 255, 255, 0.07); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; z-index: 100; }
+    .nav-left { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+    .nav-title { font-size: 14px; color: #eee; letter-spacing: 0.5px; }
+
+    .main-content { position: relative; z-index: 2; max-width: 900px; width: 100%; display: flex; flex-direction: column; gap: 30px; }
+    .page-header { text-align: center; margin-bottom: 10px; }
+    .page-title { font-size: 36px; color: #ffffff; text-shadow: 0 2px 0 #333, 2px 4px 0 #111; }
+    .page-subtitle { font-size: 16px; color: #1cb853; margin-top: 6px; }
+
+    /* ── 프로젝트 인벤토리형 그리드 ── */
+    .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; width: 100%; }
+    .project-card { background: rgba(20, 20, 24, 0.85); border: 2px solid #333; border-radius: 4px; padding: 20px; display: flex; flex-direction: column; gap: 12px; box-shadow: inset 0 0 10px rgba(0,0,0,0.5); transition: border-color 0.2s; }
+    .project-card:hover { border-color: #1cb853; }
+    .card-title { font-size: 20px; color: #fff; }
+    .card-desc { font-size: 14px; color: #aaa; line-height: 1.5; flex-grow: 1; }
+    
+    .back-btn-box { display: flex; justify-content: center; margin-top: 20px; }
+    mc-button { font-family: 'NeoDonggeunmo', sans-serif !important; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+  <nav class="top-nav">
+    <div class="nav-left" onclick="location.href='index.html'">
+      <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated">
+        <rect width="16" height="16" fill="#1cb853"/><rect x="3" y="3" width="3" height="3" fill="#111116"/><rect x="10" y="3" width="3" height="3" fill="#111116"/><rect x="5" y="7" width="6" height="2" fill="#111116"/><rect x="4" y="9" width="2" height="3" fill="#111116"/><rect x="10" y="9" width="2" height="3" fill="#111116"/><rect x="6" y="11" width="4" height="2" fill="#111116"/>
+      </svg>
+      <span class="nav-title">jaewondeveloper</span>
+    </div>
+  </nav>
+
+  <div class="hero-container">
+    <div class="hero-overlay"></div>
+
+    <main class="main-content">
+      <div class="page-header">
+        <h1 class="page-title">My Projects</h1>
+        <p class="page-subtitle">[개발 완료 및 진행 중인 작업 목록]</p>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <h2 class="card-title">Minecraft Button 컴포넌트</h2>
+          <p class="card-desc">웹사이트 어디서든 사용할 수 있는 마인크래프트 스타일의 웹 컴포넌트 버튼 라이브러리입니다.</p>
+          <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://github.com/jaewondeveloper/minecraftbutton'">
+            자세히 보기
+          </mc-button>
+        </div>
+
+        <div class="project-card">
+          <h2 class="card-title">3세대 음방시스템</h2>
+          <p class="card-desc">JBS와 협업한 학교 음악방송을 자동으로 방송하는 시스템입니다. (Windows 전용)</p>
+          <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://github.com/jaewondeveloper/automusicplayer'">
+            자세히 보기
+          </mc-button>
+        </div>
+
+        <div class="project-card">
+          <h2 class="card-title">my jdms</h2>
+          <p class="card-desc">시간표, 급식표 제공 및 모바일 학생증 지원, ai기능 지원하는 비공식 학교앱</p>
+          <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://m.onestore.co.kr/v2/ko-kr/app/0001004926'">
+            다운로드
+          </mc-button>
+        </div>
+      </div>
+
+      <div class="back-btn-box">
+        <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="160px" height="50px" onclick="location.href='index.html'">
+          돌아가기
+        </mc-button>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
