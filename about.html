@@ -74,7 +74,20 @@
       -webkit-filter: brightness(0) invert(1);
     }
 
-    .status-tag { display: inline-block; background: #0f8b3e; color: #fff; padding: 2px 8px; font-size: 12px; border-radius: 3px; margin-top: 4px; }
+    .status-badge { margin-top: 6px; }
+    .status-badge img {
+      display: inline-block;
+      height: 24px;
+      width: auto;
+      vertical-align: middle;
+      image-rendering: auto;
+    }
+    .affiliation-text {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #ffffff;
+      line-height: 1.6;
+    }
 
     .back-btn-box { display: flex; justify-content: center; margin-top: 10px; }
     mc-button { font-family: 'NeoDonggeunmo', sans-serif !important; font-size: 14px; }
@@ -111,7 +124,10 @@
         </div>
         <p class="info-p">👋 안녕하세요! 프론트엔드를 주로 다루고 있는 중학생 개발자 <strong>jaewondev</strong>입니다.</p>
         <p class="info-p">윈도우, 안드로이드, 웹 개발을 할 수 있고 프론트엔드 개발을 주로하지만 가끔씩 백앤드도 만듭니다.</p>
-        <span class="status-tag">현재 상태: 생존 및 공부 중 📚</span>
+        <div class="status-badge">
+          <img src="https://img.shields.io/badge/%ED%98%84%EC%9E%AC%20%EC%83%81%ED%83%9C-%EC%83%9D%EC%A1%B4%20%EB%B0%8F%20%EA%B3%B5%EB%B6%80%20%EC%A4%91%20%F0%9F%93%9A-22c55e?style=for-the-badge" alt="현재 상태: 생존 및 공부 중 📚" />
+        </div>
+        <p class="affiliation-text">CorerepubliX (코어리퍼블릭스) 소속</p>
       </div>
 
       <div class="info-box">
