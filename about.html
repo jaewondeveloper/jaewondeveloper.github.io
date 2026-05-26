@@ -44,7 +44,23 @@
     .info-box { background: rgba(20, 20, 24, 0.85); border: 2px solid #333; padding: 24px; border-radius: 4px; box-shadow: inset 0 0 10px rgba(0,0,0,0.5); }
     .info-title { font-size: 22px; color: #1cb853; margin-bottom: 14px; border-bottom: 2px dashed #333; padding-bottom: 6px; }
     .info-p { font-size: 15px; color: #ddd; line-height: 1.8; margin-bottom: 10px; }
-    
+
+    .profile-row { display: flex; align-items: flex-start; gap: 20px; }
+    .profile-avatar {
+      width: 80px;
+      height: 80px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid #ffffff;
+      background: #ffffff;
+      filter: brightness(0) invert(1);
+      -webkit-filter: brightness(0) invert(1);
+    }
+    .profile-text .info-p,
+    .profile-text .info-p strong { color: #ffffff !important; }
+    .profile-text .status-tag { color: #ffffff !important; }
+
     .status-tag { display: inline-block; background: #0f8b3e; color: #fff; padding: 2px 8px; font-size: 12px; border-radius: 3px; margin-top: 4px; }
 
     .back-btn-box { display: flex; justify-content: center; margin-top: 10px; }
@@ -72,9 +88,21 @@
 
       <div class="info-box">
         <h2 class="info-title">Profile</h2>
-        <p class="info-p">👋 안녕하세요! 프론트엔드를 주로 다루고 있는 중학생 개발자 <strong>jaewondev</strong>입니다.</p>
-        <p class="info-p">윈도우, 안드로이드, 웹 개발을 할 수 있고 프론트엔드 개발을 주로하지만 가끔씩 백앤드도 만듭니다.</p>
-        <span class="status-tag">현재 상태: 생존 및 공부 중 📚</span>
+        <div class="profile-row">
+          <img
+            class="profile-avatar"
+            src="https://i.postimg.cc/pX1hpvLL/recore.png"
+            alt="프로필"
+            width="80"
+            height="80"
+            decoding="async"
+          />
+          <div class="profile-text">
+            <p class="info-p">👋 안녕하세요! 프론트엔드를 주로 다루고 있는 중학생 개발자 <strong>jaewondev</strong>입니다.</p>
+            <p class="info-p">윈도우, 안드로이드, 웹 개발을 할 수 있고 프론트엔드 개발을 주로하지만 가끔씩 백앤드도 만듭니다.</p>
+            <span class="status-tag">현재 상태: 생존 및 공부 중 📚</span>
+          </div>
+        </div>
       </div>
 
       <div class="info-box">
