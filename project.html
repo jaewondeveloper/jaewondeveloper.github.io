@@ -37,7 +37,7 @@
     .nav-left { display: flex; align-items: center; gap: 10px; cursor: pointer; }
     .nav-title { font-size: 14px; color: #eee; letter-spacing: 0.5px; }
 
-    .main-content { position: relative; z-index: 2; max-width: 900px; width: 100%; display: flex; flex-direction: column; gap: 30px; }
+    .main-content { position: relative; z-index: 2; max-width: 1100px; width: 100%; display: flex; flex-direction: column; gap: 30px; }
     .page-header { text-align: center; margin-bottom: 10px; }
     .page-title { font-size: 36px; color: #ffffff; text-shadow: 0 2px 0 #333, 2px 4px 0 #111; }
     .page-subtitle { font-size: 16px; color: #1cb853; margin-top: 6px; }
@@ -48,6 +48,7 @@
     .project-card:hover { border-color: #1cb853; }
     .card-title { font-size: 20px; color: #fff; }
     .card-desc { font-size: 14px; color: #aaa; line-height: 1.5; flex-grow: 1; }
+    .card-desc code { color: #1cb853; font-size: 12px; }
     
     .back-btn-box { display: flex; justify-content: center; margin-top: 20px; }
     mc-button { font-family: 'NeoDonggeunmo', sans-serif !important; font-size: 14px; }
@@ -75,8 +76,8 @@
 
       <div class="project-grid">
         <div class="project-card">
-          <h2 class="card-title">Minecraft Button 컴포넌트</h2>
-          <p class="card-desc">웹사이트 어디서든 사용할 수 있는 마인크래프트 스타일의 웹 컴포넌트 버튼 라이브러리입니다.</p>
+          <h2 class="card-title">Minecraft Button</h2>
+          <p class="card-desc">웹사이트 어디서든 쓸 수 있는 마인크래프트 스타일 버튼 웹 컴포넌트 라이브러리입니다.</p>
           <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://github.com/jaewondeveloper/minecraftbutton'">
             자세히 보기
           </mc-button>
@@ -84,7 +85,7 @@
 
         <div class="project-card">
           <h2 class="card-title">3세대 음방시스템</h2>
-          <p class="card-desc">JBS와 협업한 학교 음악방송을 자동으로 방송하는 시스템입니다. (Windows 전용)</p>
+          <p class="card-desc">학교 음악 방송용 Windows 앱입니다. YouTube·로컬 재생, WebView2 패널, Cloudflare D1 동기화, 웹 관리 포털을 지원합니다.</p>
           <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://github.com/jaewondeveloper/automusicplayer'">
             자세히 보기
           </mc-button>
@@ -92,15 +93,55 @@
 
         <div class="project-card">
           <h2 class="card-title">my jdms</h2>
-          <p class="card-desc">시간표, 급식표 제공 및 모바일 학생증 지원, ai기능 지원하는 비공식 학교앱</p>
+          <p class="card-desc">시간표·급식표·모바일 학생증·AI 기능을 제공하는 비공식 학교 앱입니다. (원스토어 배포)</p>
           <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://m.onestore.co.kr/v2/ko-kr/app/0001004926'">
             다운로드
           </mc-button>
         </div>
 
         <div class="project-card">
+          <h2 class="card-title">JDMS 커뮤니티</h2>
+          <p class="card-desc">중동중학교 커뮤니티 웹입니다. GitHub Pages 프론트와 Cloudflare Workers·D1 API로 로그인·게시 기능을 제공합니다.</p>
+          <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://jaewondeveloper.github.io/jdmscommunity/'">
+            사이트 보기
+          </mc-button>
+        </div>
+
+        <div class="project-card">
+          <h2 class="card-title">Pepe Browser</h2>
+          <p class="card-desc">Windows용 미니 브라우저입니다. PySide6 Qt WebEngine으로 크롬 스타일 탭·주소창 UI를 제공합니다.</p>
+          <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://github.com/jaewondeveloper/pepe-browser'">
+            자세히 보기
+          </mc-button>
+        </div>
+
+        <div class="project-card">
+          <h2 class="card-title">MinsuGPT</h2>
+          <p class="card-desc">Gemini 스타일 채팅 UI 웹 앱입니다. MinsuGPT API와 연동하며 로그인·회원가입 화면을 포함합니다.</p>
+          <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://jaewondeveloper.github.io/minsugpt/'">
+            사이트 보기
+          </mc-button>
+        </div>
+
+        <div class="project-card">
+          <h2 class="card-title">comsigan (Python)</h2>
+          <p class="card-desc">컴시간알리미 학생 시간표를 조회하는 비공식 Python 클라이언트입니다. PyPI 패키지 <code>comsigan</code>으로 배포됩니다.</p>
+          <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://github.com/jaewondeveloper/comsigan-api-python'">
+            자세히 보기
+          </mc-button>
+        </div>
+
+        <div class="project-card">
+          <h2 class="card-title">comsigan (Node.js)</h2>
+          <p class="card-desc">컴시간알리미 시간표 역공학 Node.js 클라이언트입니다. npm 패키지 <code>comsigan-api</code>로 사용할 수 있습니다.</p>
+          <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://github.com/jaewondeveloper/comsigan-api-nodejs'">
+            자세히 보기
+          </mc-button>
+        </div>
+
+        <div class="project-card">
           <h2 class="card-title">Windows Control System (WCS)</h2>
-          <p class="card-desc">Windows PC를 원격으로 모니터링·제어하는 시스템입니다. Flask API 서버, Windows 에이전트·관리자, Android 관리자 앱으로 구성됩니다.</p>
+          <p class="card-desc">Windows PC 원격 모니터링·제어 시스템입니다. Flask API, Windows 에이전트·관리자, Android 관리자 앱으로 구성됩니다.</p>
           <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://github.com/jaewondeveloper/windows-control-system-WCS-'">
             자세히 보기
           </mc-button>
@@ -108,8 +149,24 @@
 
         <div class="project-card">
           <h2 class="card-title">SharePass</h2>
-          <p class="card-desc">브라우저에서 근처 기기와 파일·텍스트를 빠르게 주고받는 웹 앱입니다. Flask API와 연동해 업로드·수신·다운로드를 처리합니다.</p>
+          <p class="card-desc">브라우저에서 근처 기기와 파일·텍스트를 빠르게 주고받는 웹 앱입니다. Flask API와 연동합니다.</p>
           <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://github.com/jaewondeveloper/share-pass'">
+            자세히 보기
+          </mc-button>
+        </div>
+
+        <div class="project-card">
+          <h2 class="card-title">MinTalk</h2>
+          <p class="card-desc">웹 기반 메신저·채팅 프로젝트입니다. HTML로 구성된 프론트엔드 저장소입니다.</p>
+          <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://github.com/jaewondeveloper/mintalk'">
+            자세히 보기
+          </mc-button>
+        </div>
+
+        <div class="project-card">
+          <h2 class="card-title">Vote Service</h2>
+          <p class="card-desc">학교·행사용 투표 웹 서비스 프로젝트입니다. HTML 기반 UI 저장소입니다.</p>
+          <mc-button bg-top="#1cb853" bg-bottom="#0f8b3e" text-color="#ffffff" width="100%" height="40px" onclick="location.href='https://github.com/jaewondeveloper/vote-service'">
             자세히 보기
           </mc-button>
         </div>
